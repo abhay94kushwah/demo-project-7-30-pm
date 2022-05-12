@@ -10,14 +10,10 @@ public class Employee_list {
         ArrayList<Employee> EmployeeList=new ArrayList<>();
         Employee employee1=new Employee("Ramesh singh","Banking",456);
         Employee employee2=new Employee("Manoj pathak","IT",789);
+        EmployeeList.add(employee1);
+        EmployeeList.add(employee2);
         return EmployeeList;
     }
-    @RequestMapping("/employee")
-    public static void main(String[] args){
-        Employee_list obj=new Employee_list();
-        ArrayList<Employee> EmployeeList=obj.createEmployeeList();
-        for(Employee var : EmployeeList){
-            System.out.println("printing :"+var.getDepartmrnt()+" :"+var.getName()+" :"+var.getID());
-        }
+
     }
-}
+
